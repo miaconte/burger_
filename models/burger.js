@@ -1,6 +1,10 @@
 let orm = require("../config/orm.js");
 
 // object containing functions to execute the defined orm's
+// * `selectAll()`
+// * `insertOne()`
+// * `updateOne()`
+
 var burger = {
   selectAll: function (callback) {
     orm.selectAll("burgers", function (ormResponse) {
